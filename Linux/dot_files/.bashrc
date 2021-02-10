@@ -21,7 +21,7 @@ alias gcpc='git cherry-pick --continue'
 alias gmt='git mergetool'
 
 function gri() {
-	num=$(1:-3)
+	num=${1:-3}
 	git rebase -i HEAD~$num;
 }
 
