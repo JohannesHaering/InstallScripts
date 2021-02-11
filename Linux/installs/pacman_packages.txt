@@ -18,3 +18,4 @@ networkmanager
 networkmanager-openvpn
 npm
 python
+okular
