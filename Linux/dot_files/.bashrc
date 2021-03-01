@@ -33,6 +33,11 @@ alias down='cd ~/Download'
 alias drive='cd ~/GoogleDrive'
 alias proj='cd ~/Documents/Projekte'
 
+function start-ssh() {
+    eval $(ssh-agent);
+    ssh-add;
+}
+
 [[ $- != *i* ]] && return
 
 colors() {
