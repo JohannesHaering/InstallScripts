@@ -40,6 +40,9 @@ function start-ssh() {
 }
 
 alias pac='sudo pacman'
+alias apt='sudo apt-get'
+
+alias v='xclip -selection clipboard'
 
 [[ $- != *i* ]] && return
 
