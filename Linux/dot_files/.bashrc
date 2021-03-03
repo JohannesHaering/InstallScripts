@@ -3,6 +3,7 @@
 alias gg='gitg&'
 alias gk='gitg&'
 alias gp='git push'
+alias gpl='git pull'
 alias glc='git clone'
 alias gf='git fetch'
 alias gco='git checkout'
@@ -37,6 +38,8 @@ function start-ssh() {
     eval $(ssh-agent);
     ssh-add;
 }
+
+alias pac='sudo pacman'
 
 [[ $- != *i* ]] && return
 
@@ -178,4 +181,4 @@ git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
 }
 
-export PS1="\[\033[01;32m\][\u@\h\[\033[01;37m\]\W\[\033[01;32m\]]\$\[\033[00;32m\](git_branch)\[\033[00m\]\$ "
+export PS1="\[\033[01;32m\][\u@\h \[\033[01;37m\]\W\[\033[01;32m\]]\$\[\033[00;32m\]\$(git_branch)\[\033[00m\]\$ "
