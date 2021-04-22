@@ -1,0 +1,18 @@
+[
+  {
+    "type": "folder",
+    "path": "Projects",
+    "sub": [
+      {
+        "type": "folder",
+        "path": "Bash",
+        "sub": [
+          {
+            "type": "repo",
+            "url": "git@github.com:JohannesHaering/InstallScripts.git"
+          }
+        ]
+      }
+    ]
+  }
+]
