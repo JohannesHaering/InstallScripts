@@ -20,11 +20,17 @@ alias gcp='git cherry-pick'
 alias gcpa='git cherry-pick --abort'
 alias gcpc='git cherry-pick --continue'
 alias gmt='git mergetool'
+alias gm='git merge'
+alias gb='git branch'
+alias gba="git branch -a"
 
 function gri() {
 	num=${1:-3}
 	git rebase -i HEAD~$num;
 }
+
+# Enable the __git_complete function to autocomplete aliases once you press TAB
+source ~/git-completion.bash
 
 alias ..='cd ..'
 alias ...='cd ../..'
